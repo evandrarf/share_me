@@ -90,7 +90,7 @@ const Pin = ({ pin: { postedBy, image, destination, _id, save } }) => {
                   <BsFillArrowUpRightCircleFill /> {destination.length > 15 ? `${destination.slice(0, 15)}...` : destination}
                 </a>
               )}
-              {postedBy?._id === user.googleId && (
+              {postedBy?._id === user?.googleId && (
                 <button
                   type="button"
                   className="bg-white p-2 opacity-70 hover:opacity-100  font-bold text-dark text-base rounded-3xl hover:shadow-md ouline-none"
